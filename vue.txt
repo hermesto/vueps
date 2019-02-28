@@ -1,0 +1,14 @@
+vue
+
+dentro de computed las propiedades se acceden a travez del metodo this
+computed
+watchers
+metodos
+
+watch
+los watchers se enlazan directamente sobre una variable del view model si quier
+enlazar una variable el watch debe llamar name
+
+
+methods - eventos
+los eventos

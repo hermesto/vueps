@@ -1,0 +1,23 @@
+@import '../../node_modules/bulma/bulma.sass';
+
+@font-face {font-family:"Roboto Bold";
+    src: url("assets/DroidSans-Bold.eot?") format("eot"), url("assets/DroidSans-Bold.woff") format("woff"), url("assets/DroidSans-Bold.ttf") format("truetype"), url("assets/DroidSans-Bold.svg#Roboto-Bold") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+.contenedor{
+    font-family:"Roboto Bold";
+    padding: 60px 30px;
+    width:500px;
+    height:409px;
+    margin: 0 auto;
+    p{
+        color:#00BFD6;
+        font-size:18px;
+        font-weight:bolder;
+        text-align:center;
+    }
+
+}
+
