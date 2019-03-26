@@ -9,6 +9,6 @@
           .nav-right.nav-menu
     .hero-body
       .container.has-text-centered
-        h1.title Chimallinalli
+        h1.title C
         h2.subtitle Canciones que estan en vue
 </template>

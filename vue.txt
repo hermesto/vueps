@@ -12,3 +12,51 @@ enlazar una variable el watch debe llamar name
 
 methods - eventos
 los eventos
+
+Reactividad 
+  los componentes deben estar declarados desde el inicio
+  si se agrega un solo componente puede hacerse asi:
+  this.$set(this.person, 'lastName', 'Ernesto')
+
+  si se agregara un conjunto de propiedades puede acerse:
+  this.person = Object.assign({}, this.person, { lastName: 'Ernesto', edad: 29 })
+
+Ciclo de vida de un componente
+export default {
+  name: 'app',
+  data () {
+    return {
+      person: {
+        name: 'hermesto'
+      }
+    }
+  },
+  beforeCreated () {
+    //se ejecuta cuando la instancia y los eventos, las computed properties, el data y los metodos estan creados
+    //normalmente se utiliza para inicializar propiedades del objeto data
+    //se ejecuta justo despues de la inicializacion de la instancia
+  },
+  created (){
+      console.log('created')
+      //obtener informacion de api rest, obtener info y cargarla en memoria
+  },
+  beforeMount () {
+    //se ejecuta justo antes de que se añada al DOM
+  },
+  mountded () {
+    console.log('mounted')
+    //se ejecuta despues de añadirlo al DOM, se utiliza para inicializar librerias que dependen del DOM
+  },
+  beforeUpdate () {
+    //se ejecuta cuando el data cambia, pero el DOM aun no ha plasmado los cambios
+  },
+  updated () {
+    //se ejecuta despues que el data cambie y el dom muestre los cambios
+  },
+  beforeDestroy () {
+    //se ejecuta justo antes de eliminar la instancia
+  },
+  destroyed () {
+    //se ejecuta cuando la instancia, los eventos, directivas e hijos del componente de han eliminado
+  }
+}
