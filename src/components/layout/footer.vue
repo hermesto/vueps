@@ -2,5 +2,5 @@
   footer.footer
     .container
       .content.has-text-centered
-        p H3RM570
+        p creando un stash sfgsdfgdfgdsfgdfsgfdgfdgfdsgdsfgdf
 </template>
